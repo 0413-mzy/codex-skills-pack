@@ -8,6 +8,20 @@ SOURCE_DIR="${SOURCE_DIR:-$CODEX_HOME/community-skills}"
 
 PACK_LINKS=(
   superpowers
+  brainstorming
+  dispatching-parallel-agents
+  executing-plans
+  finishing-a-development-branch
+  receiving-code-review
+  requesting-code-review
+  subagent-driven-development
+  systematic-debugging
+  test-driven-development
+  using-git-worktrees
+  using-superpowers
+  verification-before-completion
+  writing-plans
+  writing-skills
   caveman
   design-an-interface
   diagnose
@@ -117,4 +131,3 @@ fi
 echo ""
 echo "卸载完成。请重启 Codex。"
 echo "注意：gstack 可能曾更新 ~/.codex/AGENTS.md，如需完全清理，请手动删除其中 GSTACK-CODEX MANAGED BLOCK。"
-

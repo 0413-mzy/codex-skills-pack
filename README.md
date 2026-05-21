@@ -127,6 +127,7 @@ codex-skills-pack/
 - 使用 `curl` 下载少量单文件 skills。
 - 使用 `npx gstack-codex init --global` 安装 gstack。
 - 在 `~/.agents/skills` 中创建软链接。
+- Superpowers 会同时创建 `superpowers` 包入口和每个 skill 的顶层入口，例如 `brainstorming`、`systematic-debugging`、`using-superpowers`。
 - 在 `~/.codex/community-skills` 中保存上游源码缓存。
 
 运行任何远程安装脚本前，都建议先阅读源码。

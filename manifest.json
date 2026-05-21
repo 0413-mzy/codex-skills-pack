@@ -13,6 +13,7 @@
         "from": "skills",
         "to": "superpowers"
       },
+      "alsoLinkChildren": true,
       "skills": [
         "brainstorming",
         "dispatching-parallel-agents",
@@ -145,4 +146,3 @@
     }
   ]
 }
-

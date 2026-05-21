@@ -116,6 +116,7 @@ main() {
 
   clone_or_update "https://github.com/obra/superpowers.git" "$SOURCE_DIR/superpowers"
   link_dir "$SOURCE_DIR/superpowers/skills" "superpowers"
+  link_skill_children "$SOURCE_DIR/superpowers/skills"
 
   clone_or_update "https://github.com/mattpocock/skills.git" "$SOURCE_DIR/mattpocock-skills"
   link_skill_children "$SOURCE_DIR/mattpocock-skills/skills"
