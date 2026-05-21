@@ -1,0 +1,148 @@
+{
+  "name": "codex-skills-pack",
+  "description": "A one-command installer for a curated set of Codex skills.",
+  "version": "0.1.0",
+  "installTarget": "~/.agents/skills",
+  "sourceCache": "~/.codex/community-skills",
+  "packs": [
+    {
+      "name": "superpowers",
+      "source": "https://github.com/obra/superpowers",
+      "install": "clone-and-link",
+      "link": {
+        "from": "skills",
+        "to": "superpowers"
+      },
+      "skills": [
+        "brainstorming",
+        "dispatching-parallel-agents",
+        "executing-plans",
+        "finishing-a-development-branch",
+        "receiving-code-review",
+        "requesting-code-review",
+        "subagent-driven-development",
+        "systematic-debugging",
+        "test-driven-development",
+        "using-git-worktrees",
+        "using-superpowers",
+        "verification-before-completion",
+        "writing-plans",
+        "writing-skills"
+      ]
+    },
+    {
+      "name": "gstack-codex",
+      "source": "https://www.npmjs.com/package/gstack-codex",
+      "install": "npx gstack-codex init --global",
+      "skills": [
+        "gstack",
+        "office-hours",
+        "plan-ceo-review",
+        "plan-eng-review",
+        "review",
+        "ship",
+        "gstack-upgrade"
+      ]
+    },
+    {
+      "name": "mattpocock-skills",
+      "source": "https://github.com/mattpocock/skills",
+      "install": "clone-and-link-children",
+      "path": "skills/*/*",
+      "skills": [
+        "caveman",
+        "design-an-interface",
+        "diagnose",
+        "edit-article",
+        "git-guardrails-claude-code",
+        "grill-me",
+        "grill-with-docs",
+        "handoff",
+        "improve-codebase-architecture",
+        "migrate-to-shoehorn",
+        "obsidian-vault",
+        "prototype",
+        "qa",
+        "request-refactor-plan",
+        "review",
+        "scaffold-exercises",
+        "setup-matt-pocock-skills",
+        "setup-pre-commit",
+        "tdd",
+        "to-issues",
+        "to-prd",
+        "triage",
+        "ubiquitous-language",
+        "write-a-skill",
+        "writing-beats",
+        "writing-fragments",
+        "writing-shape",
+        "zoom-out"
+      ]
+    },
+    {
+      "name": "baoyu-skills",
+      "source": "https://github.com/jimliu/baoyu-skills",
+      "install": "clone-and-link-children",
+      "path": "skills/*",
+      "skills": [
+        "baoyu-article-illustrator",
+        "baoyu-comic",
+        "baoyu-compress-image",
+        "baoyu-cover-image",
+        "baoyu-danger-gemini-web",
+        "baoyu-danger-x-to-markdown",
+        "baoyu-diagram",
+        "baoyu-format-markdown",
+        "baoyu-image-cards",
+        "baoyu-image-gen",
+        "baoyu-imagine",
+        "baoyu-infographic",
+        "baoyu-markdown-to-html",
+        "baoyu-post-to-wechat",
+        "baoyu-post-to-weibo",
+        "baoyu-post-to-x",
+        "baoyu-slide-deck",
+        "baoyu-translate",
+        "baoyu-url-to-markdown",
+        "baoyu-wechat-summary",
+        "baoyu-xhs-images",
+        "baoyu-youtube-transcript"
+      ]
+    },
+    {
+      "name": "ui-ux-pro-max-skill",
+      "source": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "install": "clone-and-link-children",
+      "path": ".claude/skills/*",
+      "skills": [
+        "banner-design",
+        "brand",
+        "design",
+        "design-system",
+        "slides",
+        "ui-styling",
+        "ui-ux-pro-max"
+      ]
+    },
+    {
+      "name": "frontend-design",
+      "source": "https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design/skills/frontend-design",
+      "install": "download-skill-file",
+      "url": "https://raw.githubusercontent.com/anthropics/claude-code/main/plugins/frontend-design/skills/frontend-design/SKILL.md",
+      "skills": [
+        "frontend-design"
+      ]
+    },
+    {
+      "name": "markdown-to-html-skill",
+      "source": "https://claudskills.com/skills/markdown-to-html-skill/",
+      "install": "download-skill-file",
+      "url": "https://claudskills.com/skills/markdown-to-html-skill/SKILL.md",
+      "skills": [
+        "markdown-to-html-skill"
+      ]
+    }
+  ]
+}
+
